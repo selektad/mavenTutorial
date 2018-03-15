@@ -1,6 +1,6 @@
 #pastas e ficheiros a serem ignorados no repositorio
 #ide
-.ideia/*
+.idea/*
 
 #ficheiros compilados
 target/*
