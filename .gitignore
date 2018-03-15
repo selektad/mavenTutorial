@@ -1,0 +1,9 @@
+#pastas e ficheiros a serem ignorados no repositorio
+#ide
+.ideia/*
+
+#ficheiros compilados
+target/*
+
+#ficheiros de configuracao
+*.iml
