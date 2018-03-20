@@ -17,14 +17,17 @@ public class SumResource {
         return "Hello World!";
     }
 
-
-
-
     @POST
+    /*@Path("/{numA}/{numB}")*/
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Integer getSumInJson(SumPOJO sumpojo /*Integer numA, Integer numB*/){
+    public Integer getSumInJson(SumPOJO sumpojo/*, @PathParam("numA") Integer numA, @PathParam("numB") Integer numB /*Integer numA, Integer numB*/){
         //SumPOJO sumpojo = new SumPOJO(numA, numB);
+        //sumpojo.setNumA(numA);
+        //sumpojo.setNumB(numB);
+
+
+
         Integer result = SumService.sum(sumpojo);
         return result;
     }

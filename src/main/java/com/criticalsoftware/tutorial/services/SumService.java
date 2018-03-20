@@ -5,7 +5,7 @@ import com.criticalsoftware.tutorial.pojo.SumPOJO;
 public class SumService {
 
     public static Integer sum(SumPOJO object) {
-        return object.getNumA() + object.getNumB()+20;
+        return object.getNumA() + object.getNumB();
     }
 
 }
